@@ -12,7 +12,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #091921;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+div{
+    border-radius: 50%;
 }
 
 .calculator {
@@ -28,6 +32,7 @@ body {
     outline: none;
     padding: 10px;
     font-size: 18px;
+    border-radius: 5px 5px 0 0 ;
 }
 .calculator span {
     display: grid;
@@ -46,6 +51,9 @@ body {
     grid-column: span 2;
     width: 200px;
     background: #ff3077;
+}
+.calculator span.clear:active {
+    background: #BC66F9;
 }
 .calculator span.plus {
     grid-row: span 2;
